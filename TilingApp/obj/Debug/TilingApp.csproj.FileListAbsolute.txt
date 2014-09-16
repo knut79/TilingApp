@@ -1,0 +1,9 @@
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\bin\Debug\TilingApp.exe.config
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.csprojResolveAssemblyReference.cache
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.Form1.resources
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.Properties.Resources.resources
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.csproj.GenerateResource.Cache
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\bin\Debug\TilingApp.exe
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\bin\Debug\TilingApp.pdb
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.exe
+c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.pdb
