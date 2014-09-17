@@ -76,7 +76,7 @@ namespace TilingApp
                     }
                 }
 
-                this.textBoxOutput.AppendText(string.Format("Done writing {0} files to {1}",numFiles, System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)));
+                this.textBoxOutput.AppendText(string.Format("Done writing {0} files to {1}", numFiles, newDirectory));
             }
 
             //Bitmap.Clone(Rectangle, PixelFormat) 
