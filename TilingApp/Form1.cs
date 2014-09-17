@@ -62,10 +62,10 @@ namespace TilingApp
                 Directory.CreateDirectory(newDirectory);
                 for(int x = 0 ; x < horisoltalNumberOfTiles;x++ )
                 {
-                    var calculatedTileWidth = x  +1 == horisoltalNumberOfTiles ? tilewidth - remainderWidth : tilewidth;
+                    var calculatedTileWidth = x  +1 == horisoltalNumberOfTiles ? remainderWidth : tilewidth;
                     for (int y = 0; y < verticalNumberOfTiles; y++)
                     {
-                        var calculatedTileHeight = y + 1 == verticalNumberOfTiles ? tileheight - remainderHeight: tileheight; 
+                        var calculatedTileHeight = y + 1 == verticalNumberOfTiles ? remainderHeight: tileheight; 
                         Rectangle section = new Rectangle(new System.Drawing.Point(x * tilewidth, y*tileheight), 
                             new System.Drawing.Size(calculatedTileWidth, calculatedTileHeight));
                         Bitmap croppedImage = CropImage(source, section);

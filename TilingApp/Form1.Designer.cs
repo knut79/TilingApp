@@ -54,7 +54,7 @@
             this.textBoxPrefix.Name = "textBoxPrefix";
             this.textBoxPrefix.Size = new System.Drawing.Size(202, 20);
             this.textBoxPrefix.TabIndex = 1;
-            this.textBoxPrefix.Text = "world_xx_";
+            this.textBoxPrefix.Text = "world_xx";
             // 
             // label1
             // 
