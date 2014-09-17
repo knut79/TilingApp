@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxWidth = new System.Windows.Forms.TextBox();
             this.textBoxHeight = new System.Windows.Forms.TextBox();
+            this.textBoxOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnBrowseFile
@@ -49,15 +50,16 @@
             // 
             // textBoxPrefix
             // 
-            this.textBoxPrefix.Location = new System.Drawing.Point(281, 202);
+            this.textBoxPrefix.Location = new System.Drawing.Point(281, 180);
             this.textBoxPrefix.Name = "textBoxPrefix";
             this.textBoxPrefix.Size = new System.Drawing.Size(202, 20);
             this.textBoxPrefix.TabIndex = 1;
+            this.textBoxPrefix.Text = "world_xx_";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(278, 186);
+            this.label1.Location = new System.Drawing.Point(278, 164);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 2;
@@ -67,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(278, 266);
+            this.label2.Location = new System.Drawing.Point(278, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 3;
@@ -76,7 +78,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(278, 292);
+            this.label3.Location = new System.Drawing.Point(278, 263);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 4;
@@ -84,24 +86,35 @@
             // 
             // textBoxWidth
             // 
-            this.textBoxWidth.Location = new System.Drawing.Point(319, 263);
+            this.textBoxWidth.Location = new System.Drawing.Point(319, 234);
             this.textBoxWidth.Name = "textBoxWidth";
             this.textBoxWidth.Size = new System.Drawing.Size(100, 20);
             this.textBoxWidth.TabIndex = 5;
+            this.textBoxWidth.Text = "256";
             this.textBoxWidth.TextChanged += new System.EventHandler(this.textBoxWidth_TextChanged);
             // 
             // textBoxHeight
             // 
-            this.textBoxHeight.Location = new System.Drawing.Point(319, 289);
+            this.textBoxHeight.Location = new System.Drawing.Point(319, 260);
             this.textBoxHeight.Name = "textBoxHeight";
             this.textBoxHeight.Size = new System.Drawing.Size(100, 20);
             this.textBoxHeight.TabIndex = 6;
+            this.textBoxHeight.Text = "256";
+            // 
+            // textBoxOutput
+            // 
+            this.textBoxOutput.Location = new System.Drawing.Point(281, 305);
+            this.textBoxOutput.Multiline = true;
+            this.textBoxOutput.Name = "textBoxOutput";
+            this.textBoxOutput.Size = new System.Drawing.Size(351, 119);
+            this.textBoxOutput.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 431);
+            this.Controls.Add(this.textBoxOutput);
             this.Controls.Add(this.textBoxHeight);
             this.Controls.Add(this.textBoxWidth);
             this.Controls.Add(this.label3);
@@ -125,6 +138,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxWidth;
         private System.Windows.Forms.TextBox textBoxHeight;
+        private System.Windows.Forms.TextBox textBoxOutput;
     }
 }
 

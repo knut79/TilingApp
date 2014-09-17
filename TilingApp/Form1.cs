@@ -57,6 +57,9 @@ namespace TilingApp
                 var verticalNumberOfTiles = Math.Ceiling((double)sourceHeight/tileheight);
                 int remainderWidth = sourceWidth % tilewidth;
                 int remainderHeight = sourceHeight % tileheight;
+                int numFiles = 0;
+                string newDirectory = Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), textBoxPrefix.Text);
+                Directory.CreateDirectory(newDirectory);
                 for(int x = 0 ; x < horisoltalNumberOfTiles;x++ )
                 {
                     var calculatedTileWidth = x  +1 == horisoltalNumberOfTiles ? tilewidth - remainderWidth : tilewidth;
@@ -66,10 +69,14 @@ namespace TilingApp
                         Rectangle section = new Rectangle(new System.Drawing.Point(x * tilewidth, y*tileheight), 
                             new System.Drawing.Size(calculatedTileWidth, calculatedTileHeight));
                         Bitmap croppedImage = CropImage(source, section);
-                        var outputPath = string.Format("{0}_{1}_{2}.png", this.textBoxPrefix.Text, x, y);
+                        var outputPath = Path.Combine(newDirectory,string.Format("{0}_{1}_{2}.png", this.textBoxPrefix.Text, x, y));
+                        this.textBoxOutput.AppendText(string.Format("writing {0}_{1}_{2}.png {3}", this.textBoxPrefix.Text, x, y, Environment.NewLine));
+                        numFiles ++;
                         croppedImage.Save(outputPath, System.Drawing.Imaging.ImageFormat.Png);
                     }
                 }
+
+                this.textBoxOutput.AppendText(string.Format("Done writing {0} files to {1}",numFiles, System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location)));
             }
 
             //Bitmap.Clone(Rectangle, PixelFormat) 

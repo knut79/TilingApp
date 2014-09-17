@@ -7,3 +7,12 @@ c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\bin\Debu
 c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\bin\Debug\TilingApp.pdb
 c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.exe
 c:\users\knut\documents\visual studio 2013\Projects\TilingApp\TilingApp\obj\Debug\TilingApp.pdb
+C:\repositories\TilingApp\TilingApp\bin\Debug\TilingApp.exe.config
+C:\repositories\TilingApp\TilingApp\bin\Debug\TilingApp.exe
+C:\repositories\TilingApp\TilingApp\bin\Debug\TilingApp.pdb
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.csprojResolveAssemblyReference.cache
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.Form1.resources
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.Properties.Resources.resources
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.csproj.GenerateResource.Cache
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.exe
+C:\repositories\TilingApp\TilingApp\obj\Debug\TilingApp.pdb
