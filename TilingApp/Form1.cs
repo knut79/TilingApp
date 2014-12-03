@@ -56,23 +56,28 @@ namespace TilingApp
                 var horisoltalNumberOfTiles = Math.Ceiling((double)sourceWidth / tilewidth);
                 var verticalNumberOfTiles = Math.Ceiling((double)sourceHeight/tileheight);
                 int remainderWidth = sourceWidth % tilewidth;
+                //in case the image is divided directly into tiled
+                remainderWidth = remainderWidth == 0 ? tilewidth : remainderWidth;
                 int remainderHeight = sourceHeight % tileheight;
+                remainderHeight = remainderHeight == 0 ? tileheight : remainderHeight;
                 int numFiles = 0;
                 string newDirectory = Path.Combine(System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), textBoxPrefix.Text);
                 Directory.CreateDirectory(newDirectory);
                 for(int x = 0 ; x < horisoltalNumberOfTiles;x++ )
                 {
                     var calculatedTileWidth = x  +1 == horisoltalNumberOfTiles ? remainderWidth : tilewidth;
+                    
+                    
                     for (int y = 0; y < verticalNumberOfTiles; y++)
                     {
                         var calculatedTileHeight = y + 1 == verticalNumberOfTiles ? remainderHeight: tileheight; 
                         Rectangle section = new Rectangle(new System.Drawing.Point(x * tilewidth, y*tileheight), 
                             new System.Drawing.Size(calculatedTileWidth, calculatedTileHeight));
                         Bitmap croppedImage = CropImage(source, section);
-                        var outputPath = Path.Combine(newDirectory,string.Format("{0}_{1}_{2}.png", this.textBoxPrefix.Text, x, y));
-                        this.textBoxOutput.AppendText(string.Format("writing {0}_{1}_{2}.png {3}", this.textBoxPrefix.Text, x, y, Environment.NewLine));
+                        var outputPath = Path.Combine(newDirectory,string.Format("{0}_{1}_{2}.jpg", this.textBoxPrefix.Text, x, y));
+                        this.textBoxOutput.AppendText(string.Format("writing {0}_{1}_{2}.jpg {3}", this.textBoxPrefix.Text, x, y, Environment.NewLine));
                         numFiles ++;
-                        croppedImage.Save(outputPath, System.Drawing.Imaging.ImageFormat.Png);
+                        croppedImage.Save(outputPath, System.Drawing.Imaging.ImageFormat.Jpeg);
                     }
                 }
 
